@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+	<meta charset="utf-8">
+	<title>Install | SkyDroid</title>
+	<meta name="description" content="SkyDroid - Decentralized App Store for Android">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="/resources/css/reset.css" type="text/css" />
+	<link rel="stylesheet" href="/resources/css/style.css" type="text/css" />
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+	<link rel="manifest" href="/site.webmanifest">
+	<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#1ed660">
+	<meta name="msapplication-TileColor" content="#da532c">
+	<meta name="theme-color" content="#ffffff">
+	<meta property="og:image" content="/android-chrome-192x192.png">
+	<meta property="og:description" content="Decentralized App Store for Android" />
+	<meta property="og:site_name" content="SkyDroid">
+	<meta name="apple-mobile-web-app-status-bar-style" content="#1ed660">
+	<meta property="og:title" content="SkyDroid">
+	<meta property="og:locale" content="en_US">
+	<meta name="twitter:card" content="summary">
+</head>
+
+<body>
+	<!-- Top bar -->
+	<div class="topbar">
+		<img src="/resources/images/icon-github.svg" alt="SkyDroid Github icon"><a
+			href="https://github.com/redsolver/skydroid" target="_blank">Source Code on GitHub</a>
+	</div>
+
+
+	<!-- Header -->
+	<div class="header">
+		<div class="logo">
+			<a href="/"><img src="/resources/images/skydroid-logo.svg" alt="SkyDroid Logo" /></a>
+		</div>
+		<div class="header-button">
+			<a class="btn-green-header" href="/install/index.html"><span>Get SkyDroid</span></a>
+		</div>
+	</div>
+
+
+	<!-- Download -->
+	<section class="content-container">
+		<div class="install-heading-1">
+			<h3>Download SkyDroid</h3>
+		</div>
+		<div class="install-heading-2">
+			<h3>Your APK download is starting...</h3>
+		</div>
+
+		<div class="installation-component">
+			<p>Choose an installation method</p>
+		</div>
+		<div class="installation-component-mobile">
+			<p>If the download didn't start, <a href="https://get.skydroid.app">click here for a direct APK
+					download</a>.
+			</p>
+		</div>
+
+		<div class="splitview">
+			<div class="installation-qr">
+				<h4>Install on your Android device</h4>
+				<img src="/resources/images/qr-code.png" alt="QR Code linking to this page">
+			</div>
+
+			<div class="installation-button">
+				<h4>Download APK file directly</h4>
+				<div class="install-button-button">
+					<a class="btn-green" href="https://get.skydroid.app"><span>Download APK</span></a>
+				</div>
+			</div>
+		</div>
+
+
+		<!-- Installation content -->
+		<div class="installation-content">
+			<h3>How to install</h3>
+			<p>Wait for the download to finish, then click on the downloaded <strong>APK file</strong> to start the
+				installation
+				process. You may be prompted
+				to enable "Installation from Unknown Sources" in the process.</p>
+
+			<h3>Older Android devices</h3>
+			<p>If you are on an older Android version, you may have to enable "Unknown Sources" manually in your
+				Settings. To do this, you have to open your "Settings" app, then select "Security" and finally enable
+				"Unknown Sources" there. You should be able to install the downloaded APK file after that.
+			</p>
+		</div>
+
+	</section>
+
+	<script>
+		if (window.matchMedia("(max-width: 580px)").matches) {
+			setTimeout(function () { window.location = 'https://get.skydroid.app/'; }, 500);
+		}
+	</script>
+
+	<!-- Footer -->
+	<footer>
+		<div class="footer-image">
+			<img src="/resources/images/skydroid-logo.svg" aria-hidden="true">
+		</div>
+		<div class="footer-items">
+			<ul>
+				<li><a href="/privacy/index.html">Privacy</a></li>
+				<li><a href="https://weblate.bubu1.eu/engage/skydroid/" target="_blank">Help translate</a></li>
+				<li><a href="https://github.com/redsolver/skydroid" target="_blank">SkyDroid Source Code</a></li>
+				<li><a href="mailto:contact@skydroid.app">contact@skydroid.app</a></li>
+			</ul>
+		</div>
+	</footer>
+
+
+</body>
+
+</html>
