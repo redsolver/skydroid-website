@@ -385,6 +385,18 @@ ul + h5 {
 		display: inline-block;	
 	}
 }
+
+@media only screen and (max-width: 379px) {
+	.topbar {
+		  
+	a {
+		font-size: 12px; 
+		text-align: right;
+		margin-right: 12px;
+		padding: 12px 0 16px 0;		 
+		}
+	}
+}
 	
 	
 /* Header */	
@@ -414,12 +426,25 @@ ul + h5 {
 	}
 }
 
+@media only screen and (max-width: 379px) {
+	.header {
+		padding: 18px 12px 12px 12px;
+	}
+}
+
 .logo {
 	display: inline-block;
 }
 
 .logo img {
 	width: 72px;
+}
+
+@media only screen and (max-width: 580px) {
+	.logo img {
+		width: 48px;
+		margin-top: 4px;
+	}
 }
 
 @media only screen and (max-width: 480px) {
@@ -429,14 +454,38 @@ ul + h5 {
 	}
 }
 
-/* Button styling */
+@media only screen and (max-width: 379px) {
+	.logo img {
+		width: 32px;
+		margin-top: 0px;
+	}
+}
+
+/* Header buttons */
+.flex-buttons-header {
+	display: flex;
+	flex-direction: row;
+}
+
+@media only screen and (max-width: 480px) {
+	.flex-buttons-header {
+	}
+}
+
+
 .header-button {
-	margin-top: 28px;
+	margin-top: 14px;
+}
+
+@media only screen and (max-width: 580px) {
+	.header-button {
+		margin-top: 9px;
+	}
 }
 
 @media only screen and (max-width: 480px) {
 	.header-button {
-		margin-top: 7px;
+		margin-top: 0px;
 	}
 }
 
@@ -447,7 +496,7 @@ ul + h5 {
 
 .btn-green-header {
 	background-color: $skydroid-green;
-	padding: 14px 34px 16px 34px;
+	padding: 15px 34px 16px 34px;
 	border-radius: 4px;
 	text-decoration: none;
 	margin-left: 8px;
@@ -458,7 +507,9 @@ ul + h5 {
 }
 
 .btn-green-header span {
-	font-size: 16px;
+	display: block;
+	font-size: 14px;
+	text-align: center;
 	text-decoration: none;
 	color: $skydroid-dark;
 	font-weight: 600;
@@ -467,42 +518,182 @@ ul + h5 {
 .btn-green-header span:hover {
 }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 580px) {
 	.btn-green-header {
-		padding: 8px 14px 10px 14px;
+		padding: 13px 12px 14px 12px;
+		margin-left: 6px;
 	}
 	
 	.btn-green-header span {
-		font-size: 14px;
+		font-size: 14px;	
+	}
+}
+
+@media only screen and (max-width: 480px) {
+	.btn-green-header {
+		padding: 11px 12px 12px 12px;
+	}
 	
+	.btn-green-header span {
+		font-size: 12px;	
+	}
+}
+
+@media only screen and (max-width: 379px) {
+	.btn-green-header {
+		padding: 11px 10px 12px 10px;
+		margin-left: 4px;
 	}
 }
 
 
-.btn-green {
-	background-color: $skydroid-green;
-	padding: 14px 52px 16px 52px;
+.btn-green-header-outline {
+	padding: 14px 34px 16px 34px;
+	border: 1px solid $skydroid-green;
 	border-radius: 4px;
 	text-decoration: none;
+	margin-right: 8px;
+	color: $skydroid-green;
+}
+
+.btn-green-header-outline:hover {
+	background-color: $skydroid-green;
+	color: $skydroid-dark;
+}
+
+.btn-green-header-outline span {
+	display: block;
+	font-size: 14px;
+	text-align: center;
+	text-decoration: none;
+	font-weight: 600;
+}
+
+.btn-green-header-outline span:hover {
+
+}
+
+@media only screen and (max-width: 580px) {
+	.btn-green-header-outline {
+		padding: 12px 12px 14px 12px;
+		margin-right: 6px;
+	}
+	
+	.btn-green-header-outline span {
+		font-size: 14px;	
+	}
+}
+
+@media only screen and (max-width: 480px) {
+	.btn-green-header-outline {
+		padding: 10px 12px 12px 12px;
+	}
+	
+	.btn-green-header-outline span {
+		font-size: 12px;	
+	}
+}
+
+@media only screen and (max-width: 379px) {
+	.btn-green-header-outline {
+		padding: 11px 10px 12px 10px;
+		margin-right: 4px;
+	}
+}
+
+
+/* Content install buttons */
+.flex-buttons {
+	display: flex;
+	flex-direction: row;
+}
+
+@media only screen and (max-width: 480px) {
+	.flex-buttons {
+		display: flex;
+		flex-direction: column;
+	}
+}
+
+.btn-green {
+	background-color: $skydroid-green;
+	padding: 13px 42px 15px 42px;
+	min-width: 230px;
+	border-radius: 4px;
+	text-decoration: none;
+	margin: 0 6px 0 6px;
 }
 
 .btn-green:hover {
 	background-color: #0fbe4e;
-}
+} 
 
 .btn-green span {
+	display: block;
 	font-size: 16px;
 	text-decoration: none;
 	color: $skydroid-dark;
 	font-weight: 600;
+	text-align: center;
 }
 
 .btn-green span:hover {
 }
 
+@media only screen and (max-width: 580px) {
+	.btn-green {
+		padding: 14px 28px 16px 28px;
+		margin: 0 6px 0 6px;
+		min-width: 190px;
+	}
+}
+
 @media only screen and (max-width: 480px) {
 	.btn-green {
 		padding: 14px 48px 16px 48px;
+		margin: 0px 0px 6px 0;
+		min-width: 250px;
+	}
+}
+
+.btn-green-outline {
+	padding: 13px 42px 15px 42px;
+	min-width: 230px;
+	border: 1px solid $skydroid-green;
+	border-radius: 4px;
+	text-decoration: none;
+	margin: 0 6px 0 6px;
+}
+
+.btn-green-outline:hover {
+	background-color: $skydroid-green;
+}
+
+.btn-green-outline span {
+	display: block;
+	font-size: 16px;
+	text-decoration: none;
+	color: $skydroid-dark;
+	font-weight: 600;
+	text-align: center;
+}
+
+.btn-green-outline span:hover {
+	color: $skydroid-dark;
+}
+
+@media only screen and (max-width: 580px) {
+	.btn-green-outline {
+		padding: 14px 28px 16px 28px;
+		margin: 0 6px 0 6px;
+		min-width: 190px;
+	}
+}
+
+@media only screen and (max-width: 480px) {
+	.btn-green-outline {
+		padding: 14px 48px 16px 48px;
+		margin: 6px 0px 0px 0;
 	}
 }
 
