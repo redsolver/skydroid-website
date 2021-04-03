@@ -608,6 +608,35 @@ ul + h5 {
     margin: 6px 0px 0px 0;
   }
 }
+.btn-install {
+  background-color: #1ED660;
+  padding: 13px 42px 15px 42px;
+  border-radius: 4px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.btn-install:hover {
+  background-color: #0fbe4e;
+}
+
+.btn-install span {
+  font-size: 16px;
+  text-decoration: none;
+  color: #191919;
+  font-weight: 600;
+}
+
+@media only screen and (max-width: 580px) {
+  .btn-install {
+    padding: 14px 28px 16px 28px;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .btn-install {
+    padding: 14px 48px 16px 48px;
+  }
+}
 .phone-image {
   text-align: center;
 }
