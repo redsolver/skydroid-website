@@ -44,6 +44,10 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
+.body-dark {
+  background-color: #191919;
+}
+
 /* Font styling */
 strong {
   font-weight: 600;
@@ -82,6 +86,10 @@ h3 {
   color: #191919;
   line-height: 1.1;
   padding-top: 30px;
+}
+
+#font-white {
+  color: #fff;
 }
 
 h4 {
@@ -1168,6 +1176,230 @@ tr:nth-child(even) {
     text-align: left;
     max-width: 100%;
     margin: 10px 0 20px 0;
+  }
+}
+/* Instructions page */
+.instructions-container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0px 80px 0px 80px;
+}
+
+@media only screen and (max-width: 960px) {
+  .instructions-container {
+    padding: 0px 60px 0px 60px;
+  }
+}
+@media only screen and (max-width: 860px) {
+  .instructions-container {
+    padding: 0px 40px 0px 40px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .instructions-container {
+    padding: 0px 40px 0px 40px;
+  }
+}
+@media only screen and (max-width: 580px) {
+  .instructions-container {
+    padding: 12px 20px 0px 20px;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .instructions-container {
+    padding: 2px 20px 0px 20px;
+  }
+}
+.instructions h3 {
+  color: #fff;
+  text-align: left;
+  margin-bottom: 52px;
+}
+
+.instructions-content-background {
+  background-color: #191919;
+  border: 1px solid #3b3b3b;
+  border-radius: 4px;
+  padding: 10px 50px 40px 50px;
+  margin: 20px 0px 250px 0px;
+}
+
+.instructions-content-introduction p {
+  font-size: 16px;
+  margin: -10px 0px 40px 0px;
+}
+
+.instructions-content {
+  margin-bottom: 4px;
+}
+
+.instructions-content h3 {
+  font-size: 20px;
+  margin-bottom: 28px;
+  color: #a0a0a0;
+  text-align: left;
+}
+
+.instructions-content p {
+  font-size: 15px;
+  color: #efefef;
+}
+
+.instructions-content a {
+  color: #1ED660;
+}
+
+.instructions-content ol {
+  color: #fff;
+  display: block;
+  list-style-type: decimal;
+  list-style-position: outside;
+  margin-left: 20px;
+}
+
+.instructions-content li {
+  list-style-position: inside;
+  padding: 0px 20px 30px 0px;
+  list-style-position: outside;
+  line-height: 1.4;
+}
+
+.instructions-content-divider {
+  border: 0.5px solid #292929;
+}
+
+.tag {
+  background-color: #373737;
+  border-radius: 4px;
+  padding: 0px 6px 0px 6px;
+  display: inline-block;
+  font-family: monospace;
+  font-size: 13px;
+  color: #efefef;
+}
+
+.code-copy {
+  background-color: #212121;
+  padding: 12px 10px 14px 20px;
+  border-radius: 4px;
+  margin-bottom: 38px;
+  vertical-align: middle;
+}
+
+.code-copy-heading h4 {
+  font-size: 16px;
+  color: #fff;
+  font-weight: 500px;
+  text-align: left;
+  margin-bottom: 18px;
+}
+
+.code-copy span {
+  display: inline-block;
+  font-family: monospace;
+  font-size: 14px;
+  color: #fff;
+  width: 90%;
+  overflow-wrap: break-word;
+  line-height: 1.4;
+}
+
+.code-copy img {
+  width: 18px;
+  float: right;
+  margin: 0px 6px 0px 0px;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 768px) {
+  .instructions-content-background {
+    padding: 10px 30px 40px 30px;
+    margin: 20px 0px 250px 0px;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .instructions-content-background {
+    padding: 10px 24px 40px 24px;
+    margin: -16px 0px 250px 0px;
+  }
+
+  .instructions-content-introduction p {
+    font-size: 14px;
+    line-height: 1.4;
+    margin: -10px 0px 40px 0px;
+  }
+
+  .code-copy {
+    padding: 12px 10px 14px 16px;
+  }
+
+  .code-copy span {
+    font-size: 13px;
+    line-height: 1.5;
+  }
+
+  .code-copy img {
+    width: 16px;
+    margin: -2px 2px 0px 0px;
+  }
+
+  .instructions-content p {
+    font-size: 15px;
+  }
+
+  .instructions-content ol {
+    margin-left: 20px;
+  }
+
+  .instructions-content li {
+    font-size: 14px;
+    line-height: 1.4;
+    padding: 0px 20px 24px 0px;
+    line-height: 1.5;
+  }
+}
+@media only screen and (max-width: 380px) {
+  .instructions-content-background {
+    padding: 0px 14px 32px 14px;
+    margin: -18px 0px 250px 0px;
+  }
+
+  .instructions-content-introduction p {
+    font-size: 14px;
+    line-height: 1.5;
+    margin: -10px 0px 40px 0px;
+  }
+
+  .instructions-content h3 {
+    font-size: 18px;
+    margin-bottom: 26px;
+  }
+
+  .code-copy {
+    padding: 12px 10px 14px 14px;
+  }
+
+  .code-copy-heading h4 {
+    font-size: 14px;
+  }
+
+  .code-copy img {
+    width: 14px;
+    margin: 0px 2px 0px 0px;
+  }
+
+  .code-copy-heading h4 {
+    font-size: 15px;
+  }
+
+  .code-copy span {
+    font-size: 12px;
+    line-height: 1.5;
+  }
+
+  .tag {
+    padding: 0px 5px 0px 5px;
+    font-size: 12px;
   }
 }
 /* Footer */

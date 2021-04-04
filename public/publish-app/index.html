@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+	<meta charset="utf-8">
+	<title>Publish app | SkyDroid</title>
+	<meta name="description" content="SkyDroid - Decentralized App Store for Android">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="/resources/css/reset.css" type="text/css" />
+	<link rel="stylesheet" href="/resources/css/style.css" type="text/css" />
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+	<link rel="manifest" href="/site.webmanifest">
+	<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#1ed660">
+	<meta name="msapplication-TileColor" content="#da532c">
+	<meta name="theme-color" content="#ffffff">
+	<meta property="og:image" content="/android-chrome-192x192.png">
+	<meta property="og:description" content="Decentralized App Store for Android" />
+	<meta property="og:site_name" content="SkyDroid">
+	<meta name="apple-mobile-web-app-status-bar-style" content="#1ed660">
+	<meta property="og:title" content="SkyDroid">
+	<meta property="og:locale" content="en_US">
+	<meta name="twitter:card" content="summary">
+</head>
+
+<body class="body-dark">
+	<!-- Top bar -->
+	<div class="topbar">
+		<img src="/resources/images/icon-github.svg" alt="SkyDroid Github icon"><a
+			href="https://github.com/redsolver/skydroid" target="_blank">Source Code on GitHub</a>
+	</div>
+
+
+	<!-- Header -->
+	<div class="header">
+		<div class="logo">
+			<a href="/"><img src="/resources/images/skydroid-logo.svg" alt="SkyDroid Logo" /></a>
+		</div>
+		<div class="header-button">
+			<div class="flex-buttons-header">
+				<a class="btn-green-header-outline" href="/publish-app/index.html"><span>Publish your
+						app</span></a>
+				<a class="btn-green-header" href="/install/index.html"><span>Get SkyDroid</span></a>
+			</div>
+		</div>
+	</div>
+
+
+	<!-- Instructions content -->
+	<section class="instructions-container">
+		<div class="instructions">
+			<h3>How to publish your app</h3>
+		</div>
+
+		<div class="instructions-content-background">
+			<div class="instructions-content">
+				<h3>How to install</h3>
+				<div class="instructions-content-introduction">
+					<p>
+						The SkyDroid CLI ships as a single executable with no dependencies. You can install it using the
+						installers below, or download a release binary from the <a
+							href="https://github.com/redsolver/skydroid-cli/releases" target="_blank">releases page</a>.
+					</p>
+				</div>
+
+				<div class="code-copy-heading">
+					<h4>Shell (Mac, Linux)</h4>
+				</div>
+				<div class="code-copy">
+					<span>curl -fsSL https://github.com/redsolver/skydroid-cli/raw/master/install.sh | sh</span>
+					<img onclick="copyText('curl -fsSL https://github.com/redsolver/skydroid-cli/raw/master/install.sh | sh')"
+						src="/resources/images/icon-copy.svg" alt="Icon copy code">
+				</div>
+
+				<div class="code-copy-heading">
+					<h4>PowerShell (Windows)</h4>
+				</div>
+				<div class="code-copy">
+					<span>iwr https://github.com/redsolver/skydroid-cli/raw/master/install.ps1 -useb | iex</span>
+					<img onclick="copyText('iwr https://github.com/redsolver/skydroid-cli/raw/master/install.ps1 -useb | iex')"
+						src="/resources/images/icon-copy.svg" alt="Icon copy code">
+				</div>
+			</div>
+
+			<div class="instructions-content-divider"></div>
+
+			<div class="instructions-content">
+				<h3>Requirements</h3>
+				<ul>
+					<li>You need a domain name (for example example.com)</li>
+					<li>You need an APK file for the app you want to publish</li>
+				</ul>
+			</div>
+
+			<div class="instructions-content-divider"></div>
+
+			<div class="instructions-content">
+				<h3>Initialize SkyDroid for your app</h3>
+				<ol>
+					<li>Make sure your terminal is in the root directory of the app you want to publish</li>
+					<li>Run <span class="tag">skydroid init</span></li>
+					<li>Edit all values in <span class="tag">skydroid-app.yaml</span> to match your app</li>
+					<li>Put your app's domain name in <span class="tag">skydroid-dev.yaml</span></li>
+				</ol>
+			</div>
+
+			<div class="instructions-content-divider"></div>
+
+			<div class="instructions-content">
+				<h3>Publish your app</h3>
+				<p>Run <span class="tag">skydroid publish</span> and follow the instructions.</p>
+			</div>
+		</div>
+	</section>
+
+
+	<!-- Footer -->
+	<footer>
+		<div class="footer-image">
+			<img src="/resources/images/skydroid-logo.svg" aria-hidden="true">
+		</div>
+		<div class="footer-items">
+			<ul>
+				<li><a href="/privacy/index.html">Privacy</a></li>
+				<li><a href="https://weblate.bubu1.eu/engage/skydroid/" target="_blank">Help translate</a></li>
+				<li><a href="https://github.com/redsolver/skydroid" target="_blank">SkyDroid Source Code</a></li>
+				<li><a href="mailto:contact@skydroid.app">contact@skydroid.app</a></li>
+			</ul>
+		</div>
+	</footer>
+
+
+	<script>
+		function copyText(val) {
+			var input = document.getElementById("hiddenInput");
+			input.value = val;
+			input.select();
+			input.setSelectionRange(0, 99999)
+			document.execCommand("copy");
+		}
+	</script>
+
+	<input type="text" id="hiddenInput" hidden>
+
+</body>
+
+</html>
