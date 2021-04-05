@@ -83,17 +83,14 @@
 				</div>
 			</div>
 
-			<div class="instructions-content-divider"></div>
+			<!-- <div class="instructions-content-divider"></div> -->
 
 			<div class="instructions-content">
 				<h3>Requirements</h3>
-				<ul>
-					<li>You need a domain name (for example example.com)</li>
-					<li>You need an APK file for the app you want to publish</li>
-				</ul>
+				<p style="padding-bottom: 30px;">
+					You need a domain name (for example <span class="tag">myapp.example.com</span>).
+				</p>
 			</div>
-
-			<div class="instructions-content-divider"></div>
 
 			<div class="instructions-content">
 				<h3>Initialize SkyDroid for your app</h3>
@@ -104,8 +101,6 @@
 					<li>Put your app's domain name in <span class="tag">skydroid-dev.yaml</span></li>
 				</ol>
 			</div>
-
-			<div class="instructions-content-divider"></div>
 
 			<div class="instructions-content">
 				<h3>Publish your app</h3>
@@ -132,16 +127,17 @@
 
 
 	<script>
-		function copyText(val) {
-			var input = document.getElementById("hiddenInput");
-			input.value = val;
-			input.select();
-			input.setSelectionRange(0, 99999)
+		function copyText(value) {
+			var tempInput = document.createElement("input");
+			tempInput.style = "position: absolute; left: -1000px; top: -1000px";
+			tempInput.value = value;
+			document.body.appendChild(tempInput);
+			tempInput.select();
 			document.execCommand("copy");
+			document.body.removeChild(tempInput);
 		}
 	</script>
 
-	<input type="text" id="hiddenInput" hidden>
 
 </body>
 
